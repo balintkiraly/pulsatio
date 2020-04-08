@@ -1,5 +1,6 @@
 import { Box, Flex } from '@chakra-ui/core';
 import React from 'react';
+import './pulse.css';
 
 export interface CardProps {
   title: string;
@@ -15,9 +16,11 @@ export const Card = ({ title, url, status }: CardProps) => {
           <Box fontSize="xl" fontWeight="semibold" as="h3" lineHeight="tight" isTruncated>
             {title}
           </Box>
-          {status === 'ok' && <Box bg="green.500" rounded="lg" w="2" h="2" />}
-          {status === 'warning' && <Box bg="orange.500" rounded="lg" w="2" h="2" />}
-          {status === 'error' && <Box bg="red.500" rounded="lg" w="2" h="2" />}
+          {status === 'ok' && <Box className="pulse" bg="green.500" rounded="lg" w="2" h="2" />}
+          {status === 'warning' && (
+            <Box className="pulse" bg="orange.500" rounded="lg" w="2" h="2" />
+          )}
+          {status === 'error' && <Box className="pulse" bg="red.500" rounded="lg" w="2" h="2" />}
         </Flex>
         <Box color="gray.500">{url}</Box>
       </Box>
