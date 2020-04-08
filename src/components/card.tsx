@@ -10,7 +10,7 @@ export interface CardProps {
 
 export const Card = ({ title, url, status }: CardProps) => {
   return (
-    <Box maxW="md" borderWidth="1px" rounded="lg" overflow="hidden" bg="white" boxShadow="md">
+    <Box maxW="md" borderWidth="1px" rounded="md" overflow="hidden" bg="white" boxShadow="xs">
       <Box p={6}>
         <Flex flexDirection="row" justifyContent="space-between">
           <Box fontSize="xl" fontWeight="semibold" as="h3" lineHeight="tight" isTruncated>
