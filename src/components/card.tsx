@@ -18,7 +18,7 @@ export const Card = ({ title, url, status }: CardProps) => {
           </Box>
           {status === 'ok' && <Box className="pulse" bg="green.500" rounded="lg" w="2" h="2" />}
           {status === 'warning' && (
-            <Box className="pulse" bg="orange.500" rounded="lg" w="2" h="2" />
+            <Box className="pulse" bg="yellow.500" rounded="lg" w="2" h="2" />
           )}
           {status === 'error' && <Box className="pulse" bg="red.500" rounded="lg" w="2" h="2" />}
         </Flex>
