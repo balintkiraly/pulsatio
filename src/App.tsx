@@ -1,6 +1,6 @@
+import { CSSReset, ThemeProvider } from '@chakra-ui/core';
 import React from 'react';
 import logo from './logo.svg';
-import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 
 export const App = () => {
   return (
